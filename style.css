@@ -10,9 +10,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    position: relative; /* To allow overlay */
 }
-
 
 h2 {
     text-align: center;
@@ -28,9 +26,9 @@ p {
     font-size: 18px; /* Smaller size for mobile */
     color: rgb(0, 0, 0);
     background-color: rgba(186, 175, 242, 0.751);
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     border-radius: 10px;
-    margin: 20px auto;
+    margin: 15px auto; /* Reduced margin */
     width: 90%; /* More narrow for mobile */
 }
 
@@ -54,7 +52,7 @@ table {
     color: rgb(0, 0, 0);
     margin: 20px auto;
     border: 2px solid rgb(52, 64, 75);
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     background-color: rgb(252, 248, 255);
     width: 90%; /* More narrow for mobile */
     border-radius: 10px;
@@ -92,6 +90,7 @@ table {
     .quote-box, p {
         width: 90%; /* Keep text blocks narrow on mobile */
         font-size: 16px; /* Slightly smaller text for mobile */
+        padding: 12px; /* Slightly reduced padding */
     }
 
     table {
@@ -102,18 +101,18 @@ table {
 /* Very Small Screens (Phones: <480px) */
 @media (max-width: 480px) {
     h2 {
-        font-size: 40px; /* Reduce size for very small screens */
-        margin: 20px 0;
+        font-size: 35px; /* Further reduce size for very small screens */
+        margin: 15px 0; /* Reduced margin */
     }
 
     .quote-box, p {
         width: 100%; /* Full width for very small screens */
         font-size: 14px; /* Smaller text for small screens */
-        padding: 10px;
-        margin: 10px auto;
+        padding: 10px; /* Adjust padding */
+        margin: 10px auto; /* Adjust margin */
     }
 
     table {
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
     }
 }

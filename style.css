@@ -11,6 +11,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    animation: backgroundSlide 2s ease-in-out; /* Background slide-in */
+}
+
+/* Keyframe for background sliding effect */
+@keyframes backgroundSlide {
+    from { background-position: -100vw center; } /* Start from off-screen */
+    to { background-position: center; } /* Slide to center */
 }
 
 h2 {

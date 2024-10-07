@@ -15,26 +15,26 @@ body {
 h2 {
     text-align: center;
     font-family: 'Papyrus', cursive;
-    font-size: 50px; /* Default size for mobile */
+    font-size: 40px; /* Default size for mobile */
     color: rgb(0, 0, 0);
-    margin: 40px 0;
+    margin: 20px 0; /* Reduced margin for mobile */
 }
 
 p {
     text-align: center;
     font-family: "Pacifico", cursive;
-    font-size: 18px; /* Default size for mobile */
+    font-size: 16px; /* Smaller size for mobile */
     color: rgb(0, 0, 0);
     background-color: rgba(186, 175, 242, 0.751);
-    padding: 15px;
+    padding: 10px; /* Reduced padding */
     border-radius: 10px;
-    margin: 15px auto;
+    margin: 10px auto; /* Reduced margin */
     width: 90%; /* Default width for mobile */
 }
 
 table {
     border: 1px dotted rgb(239, 229, 241);
-    width: 90%; /* Adjust as needed */
+    width: 90%; /* Adjust width for mobile */
     max-width: 800px; /* Optional: set a maximum width */
     background-color: rgba(186, 175, 242, 0.751);
     border-width: thick;
@@ -42,18 +42,18 @@ table {
     border-left-style: solid;
     text-align: center;
     font-family: 'Lucida Handwriting', cursive;
-    font-size: 16px; /* Default text size */
+    font-size: 14px; /* Default text size for mobile */
     margin: 20px auto; /* Center the table horizontally and add vertical space */
 }
 
 .quote-box {
     text-align: center;
     font-family: 'Protest Strike', sans-serif;
-    font-size: 18px; /* Default size for mobile */
+    font-size: 16px; /* Default size for mobile */
     color: rgb(0, 0, 0);
-    margin: 20px auto;
+    margin: 10px auto; /* Reduced margin */
     border: 2px solid rgb(52, 64, 75);
-    padding: 15px;
+    padding: 10px; /* Reduced padding */
     background-color: rgb(252, 248, 255);
     width: 90%; /* Default width for mobile */
     border-radius: 10px;
@@ -78,7 +78,6 @@ table {
 
     table {
         font-size: 20px; /* Larger font in table for desktop */
-        margin: 0 auto; /* Center table */
         width: 80%; /* More narrow table on desktop */
     }
 }
@@ -86,36 +85,38 @@ table {
 /* Smaller Screens (Mobile: <768px) */
 @media (max-width: 768px) {
     h2 {
-        font-size: 50px; /* Smaller heading for mobile */
+        font-size: 40px; /* Smaller heading for mobile */
     }
 
     .quote-box, p {
         width: 90%; /* Keep text blocks narrow on mobile */
         font-size: 16px; /* Slightly smaller text for mobile */
-        padding: 12px; /* Slightly reduced padding */
+        padding: 10px; /* Reduced padding */
     }
 
     table {
         font-size: 14px; /* Smaller table font for mobile */
-        margin: 0 auto; /* Center table */
+        margin: 20px auto; /* Center table */
     }
 }
 
 /* Very Small Screens (Phones: <480px) */
 @media (max-width: 480px) {
     h2 {
-        font-size: 35px; /* Further reduce size for very small screens */
-        margin: 15px 0; /* Reduced margin */
+        font-size: 30px; /* Further reduce size for very small screens */
+        margin: 10px 0; /* Reduced margin */
     }
 
     .quote-box, p {
         width: 100%; /* Full width for very small screens */
         font-size: 14px; /* Smaller text for small screens */
-        padding: 10px; /* Adjust padding */
-        margin: 10px auto; /* Adjust margin */
+        padding: 8px; /* Adjust padding */
+        margin: 5px auto; /* Adjust margin */
     }
+
     table {
         font-size: 12px; /* Adjust font size for smaller screens */
         width: 100%; /* Make table full width for small screens */
+        margin: 10px auto; /* Center table */
     }
 }

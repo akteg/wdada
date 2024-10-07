@@ -1,3 +1,4 @@
+/* Base styles */
 body { 
     background-color: rgb(252, 255, 252);
     background-image: url('27Jan_holocaust_article-1366x768.jpg'); 
@@ -11,7 +12,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 
 h2 {
     text-align: center;
@@ -137,4 +137,5 @@ table {
         margin: 10px auto;
     }
 }
+
  

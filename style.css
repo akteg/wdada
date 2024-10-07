@@ -15,7 +15,7 @@ body {
 h2 {
     text-align: center;
     font-family: 'Papyrus', cursive;
-    font-size: 50px; /* Smaller size for mobile by default */
+    font-size: 50px; /* Default size for mobile */
     color: rgb(0, 0, 0);
     margin: 40px 0;
 }
@@ -23,13 +23,13 @@ h2 {
 p {
     text-align: center;
     font-family: "Pacifico", cursive;
-    font-size: 18px; /* Smaller size for mobile */
+    font-size: 18px; /* Default size for mobile */
     color: rgb(0, 0, 0);
     background-color: rgba(186, 175, 242, 0.751);
-    padding: 15px; /* Reduced padding */
+    padding: 15px;
     border-radius: 10px;
-    margin: 15px auto; /* Reduced margin */
-    width: 90%; /* More narrow for mobile */
+    margin: 15px auto;
+    width: 90%; /* Default width for mobile */
 }
 
 table {
@@ -41,24 +41,25 @@ table {
     border-left-style: solid;
     text-align: center;
     font-family: 'Lucida Handwriting', cursive;
-    font-size: 16px; /* Smaller text for mobile */
+    font-size: 16px; /* Default text size */
     margin-bottom: 20px;
 }
 
 .quote-box {
     text-align: center;
     font-family: 'Protest Strike', sans-serif;
-    font-size: 18px; /* Smaller size for mobile */
+    font-size: 18px; /* Default size for mobile */
     color: rgb(0, 0, 0);
     margin: 20px auto;
     border: 2px solid rgb(52, 64, 75);
-    padding: 15px; /* Reduced padding */
+    padding: 15px;
     background-color: rgb(252, 248, 255);
-    width: 90%; /* More narrow for mobile */
+    width: 90%; /* Default width for mobile */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Adjustments for larger screens */
 @media (min-width: 1024px) {
     h2 {
         font-size: 80px; /* Increase heading size for desktop */
@@ -95,6 +96,7 @@ table {
 
     table {
         font-size: 14px; /* Smaller table font for mobile */
+        margin: 0 auto; /* Center table */
     }
 }
 
@@ -114,5 +116,6 @@ table {
 
     table {
         font-size: 12px; /* Adjust font size for smaller screens */
+        margin: 10px auto; /* Center table on smaller screens */
     }
 }

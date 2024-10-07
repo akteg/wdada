@@ -4,12 +4,14 @@ body {
     background-image: url('27Jan_holocaust_article-1366x768.jpg'); 
     background-size: cover;
     background-repeat: no-repeat; 
-    background-attachment: fixed; 
+    background-attachment: fixed;
+    background-position: center;
     font-family: 'Arial', sans-serif;
     color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    position: relative; 
 }
 
 table {

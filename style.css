@@ -113,6 +113,6 @@ table {
 
     table {
         font-size: 12px; /* Adjust font size for smaller screens */
-        width: 100%; /* Make table full width for small screens */
+        width: 120%; /* Make table full width for small screens */
     }
 }

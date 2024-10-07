@@ -7,22 +7,23 @@ body {
     background-position: center;
     font-family: 'Arial', sans-serif;
     color: #333;
-    line-height: 1.4;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    text-align: center; /* Center text for all elements */
 }
 
 h2 {
+    text-align: center;
     font-family: 'Papyrus', cursive;
-    font-size: 50px; /* Default size for mobile */
+    font-size: 50px; /* Smaller size for mobile by default */
     color: rgb(0, 0, 0);
     margin: 40px 0;
 }
 
 p {
+    text-align: center;
     font-family: "Pacifico", cursive;
-    font-size: 18px; /* Default size for mobile */
+    font-size: 18px; /* Smaller size for mobile */
     color: rgb(0, 0, 0);
     background-color: rgba(186, 175, 242, 0.751);
     padding: 15px; /* Reduced padding */
@@ -33,20 +34,21 @@ p {
 
 table {
     border: 1px dotted rgb(239, 229, 241);
-    width: 90%; /* Make table width responsive */
+    width: 100%;
     background-color: rgba(186, 175, 242, 0.751);
     border-width: thick;
     border-right-style: solid;
     border-left-style: solid;
     text-align: center;
     font-family: 'Lucida Handwriting', cursive;
-    font-size: 16px; /* Default text size */
-    margin: 20px auto; /* Center table */
+    font-size: 16px; /* Smaller text for mobile */
+    margin-bottom: 20px;
 }
 
 .quote-box {
+    text-align: center;
     font-family: 'Protest Strike', sans-serif;
-    font-size: 18px; /* Default size for mobile */
+    font-size: 18px; /* Smaller size for mobile */
     color: rgb(0, 0, 0);
     margin: 20px auto;
     border: 2px solid rgb(52, 64, 75);
@@ -74,6 +76,7 @@ table {
 
     table {
         font-size: 20px; /* Larger font in table for desktop */
+        margin: 0 auto; /* Center table */
         width: 80%; /* More narrow table on desktop */
     }
 }
@@ -92,8 +95,6 @@ table {
 
     table {
         font-size: 14px; /* Smaller table font for mobile */
-        margin: 0 auto; /* Center table */
-        width: 90%; /* Adjust table width for mobile */
     }
 }
 

@@ -1,3 +1,4 @@
+/* Main styles (for larger screens) */
 body {
     background-color: rgb(252, 255, 252);
     background-image: url('27Jan_holocaust_article-1366x768.jpg'); 
@@ -24,26 +25,6 @@ body::before {
     z-index: -1;
 }
 
-h2 {
-    text-align: center;
-    font-family: 'Papyrus', cursive;
-    font-size: 50px; 
-    color: rgb(0, 0, 0);
-    margin: 40px 0;
-}
-
-p {
-    text-align: center;
-    font-family: "Pacifico", cursive;
-    font-size: 18px; /* Smaller size for mobile */
-    color: rgb(0, 0, 0);
-    background-color: rgba(186, 175, 242, 0.751);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 90%; /* More narrow for mobile */
-}
-
 table {
     border: 1px dotted rgb(239, 229, 241);
     width: 100%;
@@ -53,78 +34,85 @@ table {
     border-left-style: solid;
     text-align: center;
     font-family: 'Lucida Handwriting', cursive;
-    font-size: 16px; /* Smaller text for mobile */
+    font-size: 26px;
     margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Papyrus', cursive;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+    margin: 40px 0; 
 }
 
 .quote-box {
     text-align: center;
     font-family: 'Protest Strike', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     color: rgb(0, 0, 0);
     margin: 20px auto;
     border: 2px solid rgb(52, 64, 75);
     padding: 20px;
     background-color: rgb(252, 248, 255);
-    width: 90%; /* More narrow for mobile */
-    border-radius: 10px;
+    width: 60%;
+    border-radius: 10px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Desktop styles */
-@media (min-width: 1024px) {
-    h2 {
-        font-size: 80px; 
-    }
-
-    p {
-        font-size: 24px; /* Larger paragraph font for desktop */
-        width: 60%; /* Wider paragraph for desktop */
-    }
-
-    .quote-box {
-        font-size: 24px; /* Larger quote font for desktop */
-        width: 60%; /* Wider box for desktop */
-    }
-
-    table {
-        font-size: 20px; /* Larger font in table for desktop */
-        margin: 0 auto; /* Center table */
-        width: 80%; /* More narrow table on desktop */
-    }
+p {
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(186, 175, 242, 0.751);
+    padding: 20px;
+    border-radius: 10px; 
+    margin: 20px auto;
+    width: 80%; 
 }
 
-/* Small Screens (Tablets) */
+/* Media queries for small screens (tablets and phones) */
 @media (max-width: 768px) {
     h2 {
-        font-size: 50px; /* Smaller heading for mobile */
+        font-size: 50px; /* Reduce font size for smaller screens */
     }
 
     .quote-box, p {
-        width: 90%; /* Keep text blocks narrow on mobile */
-        font-size: 16px; /* Slightly smaller text for mobile */
+        width: 90%; /* Make boxes fill more of the screen on mobile */
+        font-size: 18px; /* Reduce font size for better readability */
     }
 
-    table {
-        font-size: 14px; /* Smaller table font for mobile */
+    table td a {
+        font-size: 18px; /* Adjust table text for mobile */
     }
 }
 
-/* Very Small Screens (Phones: <480px) */
+/* Media queries for phones (extra-small screens) */
 @media (max-width: 480px) {
     h2 {
-        font-size: 40px; /* Reduce size for very small screens */
-        margin: 20px 0;
+        font-size: 40px; /* Further reduce font size for phones */
+        margin: 20px 0;  /* Adjust margin for phones */
     }
 
     .quote-box, p {
-        width: 100%; /* Full width for very small screens */
-        font-size: 14px; /* Smaller text for small screens */
-        padding: 10px;
-        margin: 10px auto;
+        width: 100%; /* Full width for mobile */
+        font-size: 16px; /* Further reduce font size for phones */
+        padding: 10px; /* Reduce padding for small screens */
+        margin: 10px auto; /* Reduce margin */
     }
 
     table {
-        font-size: 14px; 
+        font-size: 16px; /* Smaller font size for the table on phones */
+    }
+
+    table td a {
+        font-size: 16px; /* Smaller font size for links */
+        padding: 8px 10px; /* Adjust padding for better touch targets */
+    }
+
+    /* Adjust table row spacing for better readability on phones */
+    table td {
+        padding: 8px 5px;
     }
 }

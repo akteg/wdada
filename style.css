@@ -1,4 +1,5 @@
-body {
+/* Base styles */
+body { 
     background-color: rgb(252, 255, 252);
     background-image: url('27Jan_holocaust_article-1366x768.jpg'); 
     background-size: cover;
@@ -15,108 +16,124 @@ body {
 h2 {
     text-align: center;
     font-family: 'Papyrus', cursive;
-    font-size: 40px; /* Default size for mobile */
+    font-size: 40px;
     color: rgb(0, 0, 0);
-    margin: 20px 0; /* Reduced margin for mobile */
+    margin: 20px 0;
 }
 
+/* Animation Definitions */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Animating Paragraphs */
 p {
     text-align: center;
     font-family: "Pacifico", cursive;
-    font-size: 16px; /* Smaller size for mobile */
+    font-size: 16px;
     color: rgb(0, 0, 0);
     background-color: rgba(186, 175, 242, 0.751);
-    padding: 10px; /* Reduced padding */
+    padding: 10px;
     border-radius: 10px;
-    margin: 10px auto; /* Reduced margin */
-    width: 90%; /* Default width for mobile */
+    margin: 10px auto;
+    width: 90%;
+    animation: fadeIn 2s ease-in-out; /* Adding fade-in effect */
 }
 
+/* Animating Tables */
 table {
     border: 1px dotted rgb(239, 229, 241);
-    width: 90%; /* Adjust width for mobile */
-    max-width: 800px; /* Optional: set a maximum width */
+    width: 90%;
+    max-width: 800px;
     background-color: rgba(186, 175, 242, 0.751);
     border-width: thick;
     border-right-style: solid;
     border-left-style: solid;
     text-align: center;
     font-family: 'Lucida Handwriting', cursive;
-    font-size: 14px; /* Default text size for mobile */
-    margin: 20px auto; /* Center the table horizontally and add vertical space */
+    font-size: 14px;
+    margin: 20px auto;
+    animation: bounceIn 1.5s ease; /* Adding bounce-in effect */
 }
 
+/* Animating Quote Boxes */
 .quote-box {
     text-align: center;
     font-family: 'Protest Strike', sans-serif;
-    font-size: 16px; /* Default size for mobile */
+    font-size: 16px;
     color: rgb(0, 0, 0);
-    margin: 10px auto; /* Reduced margin */
+    margin: 10px auto;
     border: 2px solid rgb(52, 64, 75);
-    padding: 10px; /* Reduced padding */
+    padding: 10px;
     background-color: rgb(252, 248, 255);
-    width: 90%; /* Default width for mobile */
+    width: 90%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: popIn 2s ease-in-out; /* Adding pop-in effect */
 }
 
 /* Adjustments for larger screens */
 @media (min-width: 1024px) {
     h2 {
-        font-size: 80px; /* Increase heading size for desktop */
+        font-size: 80px;
     }
-
     p {
-        font-size: 24px; /* Larger paragraph font for desktop */
-        width: 60%; /* Wider paragraph for desktop */
+        font-size: 24px;
+        width: 60%;
     }
-
     .quote-box {
-        font-size: 24px; /* Larger quote font for desktop */
-        width: 60%; /* Wider box for desktop */
+        font-size: 24px;
+        width: 60%;
     }
-
     table {
-        font-size: 20px; /* Larger font in table for desktop */
-        width: 80%; /* More narrow table on desktop */
+        font-size: 20px;
+        width: 80%;
     }
 }
 
 /* Smaller Screens (Mobile: <768px) */
 @media (max-width: 768px) {
     h2 {
-        font-size: 40px; /* Smaller heading for mobile */
+        font-size: 40px;
     }
-
     .quote-box, p {
-        width: 90%; /* Keep text blocks narrow on mobile */
-        font-size: 16px; /* Slightly smaller text for mobile */
-        padding: 10px; /* Reduced padding */
+        width: 90%;
+        font-size: 16px;
+        padding: 10px;
     }
-
     table {
-        font-size: 14px; /* Smaller table font for mobile */
-        margin: 20px auto; /* Center table */
+        font-size: 14px;
+        margin: 20px auto;
     }
 }
 
 /* Very Small Screens (Phones: <480px) */
 @media (max-width: 480px) {
     h2 {
-        font-size: 30px; /* Further reduce size for very small screens */
-        margin: 10px 0; /* Reduced margin */
+        font-size: 30px;
+        margin: 10px 0;
     }
-
     .quote-box, p {
-        width: 100%; /* Full width for very small screens */
-        font-size: 14px; /* Smaller text for small screens */
-        padding: 8px; /* Adjust padding */
-        margin: 5px auto; /* Adjust margin */
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+        margin: 5px auto;
     }
-
     table {
-        font-size: 12px; /* Adjust font size for smaller screens */
-        width: 100%; /* Make table full width for small screens */
-        margin: 10px auto; /* Center table */
+        font-size: 12px;
+        width: 100%;
+        margin: 10px auto;
     }
 }

@@ -1,4 +1,4 @@
-
+/* Main styles (for larger screens) */
 body {
     background-color: rgb(252, 255, 252);
     background-image: url('27Jan_holocaust_article-1366x768.jpg'); 
@@ -11,7 +11,18 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    position: relative; 
+    position: relative; /* To allow overlay */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Darken background */
+    z-index: -1;
 }
 
 table {
@@ -61,43 +72,46 @@ p {
     width: 80%; 
 }
 
-
+/* Media queries for small screens (tablets and phones) */
 @media (max-width: 768px) {
     h2 {
-        font-size: 50px;
+        font-size: 50px; /* Reduce font size for smaller screens */
     }
 
     .quote-box, p {
-        width: 90%; 
-        font-size: 18px; 
+        width: 90%; /* Make boxes fill more of the screen on mobile */
+        font-size: 18px; /* Reduce font size for better readability */
     }
 
     table td a {
-        font-size: 18px; 
+        font-size: 18px; /* Adjust table text for mobile */
     }
 }
 
+/* Media queries for phones (extra-small screens) */
 @media (max-width: 480px) {
     h2 {
-        font-size: 40px; 
-        margin: 20px 0;  
+        font-size: 40px; /* Further reduce font size for phones */
+        margin: 20px 0;  /* Adjust margin for phones */
     }
 
     .quote-box, p {
-        width: 100%; 
-        font-size: 16px; 
-        padding: 15px; 
+        width: 100%; /* Full width for mobile */
+        font-size: 16px; /* Further reduce font size for phones */
+        padding: 10px; /* Reduce padding for small screens */
+        margin: 10px auto; /* Reduce margin */
     }
 
     table {
-        font-size: 16px; 
+        font-size: 16px; /* Smaller font size for the table on phones */
     }
 
     table td a {
-        font-size: 16px;
-        padding: 8px 10px;
+        font-size: 16px; /* Smaller font size for links */
+        padding: 8px 10px; /* Adjust padding for better touch targets */
     }
 
+    /* Adjust table row spacing for better readability on phones */
     table td {
         padding: 8px 5px;
     }

@@ -7,7 +7,7 @@ body {
     background-position: center;
     font-family: 'Arial', sans-serif;
     color: #333;
-    line-height: 1.4; /* Slightly reduced line-height for better readability on small screens */
+    line-height: 1.6; /* Increased line-height for better readability */
     margin: 0;
     padding: 0;
 }
@@ -56,7 +56,7 @@ p {
     border-radius: 8px; /* Slightly smaller border-radius */
     margin: 5px auto; /* Reduced margin */
     width: 95%; /* Increased width for small screens */
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out; /* Adding fade-in effect */
 }
 
 /* Tables Styling with bounce-in animation */
@@ -71,7 +71,7 @@ table {
     font-family: 'Lucida Handwriting', cursive;
     font-size: 12px; /* Smaller font size for phone view */
     margin: 10px auto; /* Reduced margin */
-    animation: bounceIn 1.5s ease;
+    animation: bounceIn 1.5s ease; /* Adding bounce-in effect */
 }
 
 /* Quote Boxes Styling with pop-in animation */
@@ -87,7 +87,7 @@ table {
     width: 95%; /* Increased width for small screens */
     border-radius: 8px; /* Slightly smaller border-radius */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    animation: popIn 2s ease-in-out;
+    animation: popIn 2s ease-in-out; /* Adding pop-in effect */
 }
 
 /* Smaller images in image boxes */
@@ -101,7 +101,7 @@ table {
     border-radius: 8px; /* Slightly smaller border-radius */
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out; /* Fade-in effect for the image */
 }
 
 .image-box img {

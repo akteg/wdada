@@ -1,4 +1,3 @@
-/* Base styles */
 body { 
     background-color: rgb(252, 255, 252);
     background-image: url('27Jan_holocaust_article-1366x768.jpg'); 
@@ -139,5 +138,46 @@ table {
         font-size: 12px;
         width: 100%;
         margin: 10px auto;
+    }
+}
+/* Animating Images */
+.image-box {
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border: 2px solid rgb(239, 229, 241);
+    background-color: rgba(186, 175, 242, 0.751);
+    border-radius: 10px;
+    overflow: hidden; /* Ensures that image stays inside the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out; /* Fade-in effect for the image */
+}
+
+.image-box img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+    display: block;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 1024px) {
+    .image-box {
+        width: 80%; /* Wider image box for desktop */
+    }
+}
+
+/* Smaller Screens (Mobile: <768px) */
+@media (max-width: 768px) {
+    .image-box {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+/* Very Small Screens (Phones: <480px) */
+@media (max-width: 480px) {
+    .image-box {
+        width: 100%; /* Full width for very small screens */
+        margin: 10px auto; /* Adjust margin for smaller screens */
     }
 }

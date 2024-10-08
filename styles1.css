@@ -1,31 +1,27 @@
-body {
+body { 
     background-color: rgb(252, 255, 252);
-    background-image: url('e68452758f45634cd8100a7160416768.jpg');
+    background-image: url('e68452758f45634cd8100a7160416768.jpg'); 
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-attachment: fixed;
-    background-position: center; /* Centered background */
+    background-position: center;
     font-family: 'Arial', sans-serif;
     color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    text-align: center; /* Center all text in body */
 }
-
-/* Fix background only in landscape orientation */
 @media (orientation: landscape) {
     body {
-        background-attachment: fixed;
+        background-attachment: fixed; /* Fix background only in landscape orientation */
     }
 }
-
-/* Headings Styling */
 h2 {
+    text-align: center;
     font-family: 'Papyrus', cursive;
-    font-size: 30px; /* Adjusted size for better fit on phones */
+    font-size: 40px;
     color: rgb(0, 0, 0);
-    margin: 20px 0; /* Reduced margin for phones */
+    margin: 20px 0;
 }
 
 /* Animation Definitions */
@@ -45,89 +41,68 @@ h2 {
     100% { transform: scale(1); opacity: 1; }
 }
 
-/* Paragraphs Styling with fade-in animation */
+/* Animating Paragraphs */
 p {
+    text-align: center;
     font-family: "Pacifico", cursive;
     font-size: 16px;
     color: rgb(0, 0, 0);
-    background-color: rgb(6, 42, 171);
+    background-color: rgba(186, 175, 242, 0.751);
     padding: 10px;
     border-radius: 10px;
-    margin: 20px auto; /* Increased margin for more spacing */
-    width: 90%; /* Centers the paragraph */
-    animation: fadeIn 2s ease-in-out;
+    margin: 10px auto;
+    width: 90%;
+    animation: fadeIn 2s ease-in-out; /* Adding fade-in effect */
 }
 
-/* Tables Styling with bounce-in animation */
+/* Animating Tables */
 table {
-    border: 1px dotted rgb(252, 252, 252);
+    border: 1px dotted rgb(239, 229, 241);
     width: 90%;
-    max-width: 700px; /* Reduced width for phone view */
-    background-color: rgba(43, 0, 255, 0.503);
+    max-width: 800px;
+    background-color: rgba(186, 175, 242, 0.751);
     border-width: thick;
     border-right-style: solid;
     border-left-style: solid;
     text-align: center;
     font-family: 'Lucida Handwriting', cursive;
     font-size: 14px;
-    margin: 20px auto; /* Centered margin */
-    animation: bounceIn 1.5s ease;
+    margin: 20px auto;
+    animation: bounceIn 1.5s ease; /* Adding bounce-in effect */
 }
 
-/* Quote Boxes Styling with pop-in animation */
+/* Animating Quote Boxes */
 .quote-box {
+    text-align: center;
     font-family: 'Protest Strike', sans-serif;
     font-size: 16px;
     color: rgb(0, 0, 0);
-    margin: 20px auto; /* Increased margin for more spacing */
+    margin: 10px auto;
     border: 2px solid rgb(52, 64, 75);
     padding: 10px;
     background-color: rgb(252, 248, 255);
-    width: 90%; /* Centers the quote box */
+    width: 90%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    animation: popIn 2s ease-in-out;
+    animation: popIn 2s ease-in-out; /* Adding pop-in effect */
 }
 
-/* Smaller images in image boxes */
-.image-box {
-    margin: 20px auto;
-    width: 60%; /* Smaller width for images */
-    max-width: 600px;
-    border: 2px solid rgb(239, 229, 241);
-    background-color: rgba(186, 175, 242, 0.751);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 2s ease-in-out;
-}
-
-.image-box img {
-    width: 100%; /* Make image responsive */
-    height: auto;
-    display: block;
-}
-
-/* Larger Screens Styling */
+/* Adjustments for larger screens */
 @media (min-width: 1024px) {
     h2 {
         font-size: 80px;
     }
     p {
         font-size: 24px;
-        width: 60%; /* Centered width */
+        width: 60%;
     }
     .quote-box {
         font-size: 24px;
-        width: 60%; /* Centered width */
+        width: 60%;
     }
     table {
         font-size: 20px;
-        width: 80%; /* Centered width */
-    }
-    .image-box {
-        width: 50%; /* Smaller width for larger screens */
-        max-width: 500px;
+        width: 80%;
     }
 }
 
@@ -137,39 +112,72 @@ table {
         font-size: 40px;
     }
     .quote-box, p {
-        width: 90%; /* Centered width */
+        width: 90%;
         font-size: 16px;
         padding: 10px;
     }
     table {
         font-size: 14px;
         margin: 20px auto;
-        max-width: 90%; /* Maintain responsiveness */
-    }
-    .image-box {
-        width: 70%; /* Adjust width for smaller screens */
     }
 }
 
 /* Very Small Screens (Phones: <480px) */
 @media (max-width: 480px) {
     h2 {
-        font-size: 30px; /* Further reduced size for better fit */
+        font-size: 30px;
         margin: 10px 0;
     }
     .quote-box, p {
-        width: 100%; /* Full width for better fit */
+        width: 100%;
         font-size: 14px;
         padding: 8px;
-        margin: 10px auto; /* Increased margin for better spacing */
+        margin: 5px auto;
     }
     table {
         font-size: 12px;
         width: 100%;
-        margin: 10px auto; /* Centered margin */
+        margin: 10px auto;
     }
+}
+/* Animating Images */
+.image-box {
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border: 2px solid rgb(239, 229, 241);
+    background-color: rgba(186, 175, 242, 0.751);
+    border-radius: 10px;
+    overflow: hidden; /* Ensures that image stays inside the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out; /* Fade-in effect for the image */
+}
+
+.image-box img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+    display: block;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 1024px) {
+    .image-box {
+        width: 80%; /* Wider image box for desktop */
+    }
+}
+
+/* Smaller Screens (Mobile: <768px) */
+@media (max-width: 768px) {
+    .image-box {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+/* Very Small Screens (Phones: <480px) */
+@media (max-width: 480px) {
     .image-box {
         width: 100%; /* Full width for very small screens */
-        margin: 10px auto;
+        margin: 10px auto; /* Adjust margin for smaller screens */
     }
 }

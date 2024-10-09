@@ -13,7 +13,7 @@ body {
 }
 @media (orientation: landscape) {
     body {
-        background-attachment: fixed; /* Fix background only in landscape orientation */
+        background-attachment: fixed;
     }
 }
 h2 {
@@ -24,7 +24,6 @@ h2 {
     margin: 20px 0;
 }
 
-/* Animation Definitions */
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -41,7 +40,7 @@ h2 {
     100% { transform: scale(1); opacity: 1; }
 }
 
-/* Animating Paragraphs */
+
 p {
     text-align: center;
     font-family: "Pacifico", cursive;
@@ -52,10 +51,9 @@ p {
     border-radius: 10px;
     margin: 10px auto;
     width: 90%;
-    animation: fadeIn 2s ease-in-out; /* Adding fade-in effect */
+    animation: fadeIn 2s ease-in-out;
 }
 
-/* Animating Tables */
 table {
     border: 1px dotted rgb(239, 229, 241);
     width: 90%;
@@ -68,10 +66,9 @@ table {
     font-family: 'Lucida Handwriting', cursive;
     font-size: 14px;
     margin: 20px auto;
-    animation: bounceIn 1.5s ease; /* Adding bounce-in effect */
+    animation: bounceIn 1.5s ease; 
 }
 
-/* Animating Quote Boxes */
 .quote-box {
     text-align: center;
     font-family: 'Protest Strike', sans-serif;
@@ -84,10 +81,9 @@ table {
     width: 90%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    animation: popIn 2s ease-in-out; /* Adding pop-in effect */
+    animation: popIn 2s ease-in-out; 
 }
 
-/* Adjustments for larger screens */
 @media (min-width: 1024px) {
     h2 {
         font-size: 80px;
@@ -106,7 +102,7 @@ table {
     }
 }
 
-/* Smaller Screens (Mobile: <768px) */
+
 @media (max-width: 768px) {
     h2 {
         font-size: 40px;
@@ -122,7 +118,6 @@ table {
     }
 }
 
-/* Very Small Screens (Phones: <480px) */
 @media (max-width: 480px) {
     h2 {
         font-size: 30px;
@@ -140,7 +135,7 @@ table {
         margin: 10px auto;
     }
 }
-/* Animating Images */
+
 .image-box {
     text-align: center;
     margin: 20px auto;
@@ -149,35 +144,34 @@ table {
     border: 2px solid rgb(239, 229, 241);
     background-color: rgba(186, 175, 242, 0.751);
     border-radius: 10px;
-    overflow: hidden; /* Ensures that image stays inside the container */
+    overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 2s ease-in-out; /* Fade-in effect for the image */
+    animation: fadeIn 2s ease-in-out; 
 }
 
 .image-box img {
-    width: 100%; /* Make image responsive */
+    width: 100%; 
     height: auto;
     display: block;
 }
 
-/* Adjustments for larger screens */
+
 @media (min-width: 1024px) {
     .image-box {
-        width: 80%; /* Wider image box for desktop */
+        width: 80%; 
     }
 }
 
-/* Smaller Screens (Mobile: <768px) */
 @media (max-width: 768px) {
     .image-box {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 90%; 
     }
 }
 
-/* Very Small Screens (Phones: <480px) */
+
 @media (max-width: 480px) {
     .image-box {
-        width: 100%; /* Full width for very small screens */
-        margin: 10px auto; /* Adjust margin for smaller screens */
+        width: 100%; 
+        margin: 10px auto; 
     }
 }
